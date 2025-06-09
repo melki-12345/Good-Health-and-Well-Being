@@ -1,0 +1,262 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Colors */
+:root {
+    --primary: #61bb77; 
+    --secondary: #000000; 
+    --neutral-light: #ffffff; 
+    --neutral-dark: #4A4A4A; 
+    --accent: #4ba76a;
+    --new-color: #F1E3D3;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--neutral-light);
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Website Title */
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.website-title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 1rem;
+}
+
+.title-container img {
+    max-height: 130px;  /* Increased size */
+    margin-right: 0rem;
+    border-radius: 50%; /* Makes it round */
+    border: 3px solid white; /* Adds a white border */
+    padding: 0px; /* Creates space between image and border */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav a {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #000000;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    padding: 2rem;
+    text-align: left;
+    border-top: 1px solid var(--neutral-light);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Footer Left (Name and Description) */
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 2rem;
+}
+
+/* Footer Name */
+.footer-name {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer Description */
+.footer-description {
+    color: var(--neutral-dark);
+    margin-bottom: 2rem;
+    max-width: 410px;
+}
+
+/* Footer Links and Editors (Right side) */
+.footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex: 1;
+}
+
+/* Footer Links */
+.footer-links,
+.footer-editors {
+    flex: 0.6;
+    min-width: 200px;
+}
+
+/* Footer Links */
+.footer-links ul,
+.footer-editors ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links h3,
+.footer-editors h3 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* List Item Styling */
+.footer-links li,
+.footer-editors li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-editors a {
+    color: var(--neutral-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-editors a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+footer p {
+    font-size: 1rem;
+    color: var(--neutral-light);
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Content Wrapper */
+.content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Mobile Header Adjustments */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .title-container img {
+        max-height: 80px;
+    }
+    
+    .website-title {
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+    
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Mobile Footer Adjustments */
+    .footer-left,
+    .footer-links,
+    .footer-editors {
+        flex: 1 100%;
+        min-width: 100%;
+        margin-right: 0;
+    }
+    
+    .footer-left {
+        margin-bottom: 1rem;
+    }
+    
+    footer {
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .footer-name {
+        font-size: 1.5rem;
+    }
+    
+    .footer-description {
+        max-width: 100%;
+    }
+}
+
+/*Student 4 validation page*/
+.validation_imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}

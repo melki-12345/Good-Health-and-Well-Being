@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="icon" type="image/png" href="images/feedback.png"> <!--Feedback Page title icon-->
+  <link rel="stylesheet" href="css/feedback_team.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="title-container">
+      <img src="images/Logo.jpg" alt="website-logo">
+      <h1 class="website-title">Good Health and Well-Being</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="table.html">Table</a>
+      <a href="team.html">Team</a>
+      <a href="feedback.html" class="active">Feedback</a>
+      <a href="sitemap.html">Sitemap</a>
+      <a href="profile.html">User Profile</a>
+    </nav>
+  </header>
+  <br>
+  <h2>Feedback Form</h2>
+  <p class="discription">We value your feedback! Your thoughts and suggestions will help us improve and provide you with a better experience. Please take a moment to share your thoughts with us. We appreciate your input and look forward to hearing from you. Thank you!</p>
+
+  <form action="#" method="post" class="feedback-form">
+    <fieldset>
+      <legend>Required fields*</legend>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" maxlength="100" placeholder="Enter name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" value="example@gmail.com" placeholder="Enter email" required>
+
+      <label>Is this your first time visiting our site?</label>
+      <div class="radio-group">
+        <div class="radio-button">
+          <input type="radio" id="first-time-yes" name="first_time" value="Yes" required>
+          <input type="radio" id="first-time-no" name="first_time" value="No" required>
+        </div>
+        <div class="radio-label">
+          <label for="first-time-yes">Yes</label>
+          <label for="first-time-no">No</label>
+        </div>
+      </div>
+
+      <label>Was this website informative and easy to navigate through?</label>
+      <div class="radio-group">
+        <div class="radio-button">
+          <input type="radio" id="first-time-yes" name="first_time" value="Yes" required>
+          <input type="radio" id="first-time-no" name="first_time" value="No" required>
+        </div>
+        <div class="radio-label">
+          <label for="first-time-yes">Yes</label>
+          <label for="first-time-no">No</label>
+        </div>
+      </div>
+
+      <label for="comments">If "No", suggest any improvements for the future:</label>
+      <textarea id="comments" name="comments" maxlength="500" placeholder="Add your message here..."></textarea>
+
+      <label for="rating">How satisfied are you with our service? Choose from 0 to 10, with 1 being "Not satisified at all" and 10 being "Extremely satisfied!"</label>
+      <select id="rating" name="rating">
+        <option value="1">0</option>
+        <option value="2">1</option>
+        <option value="3">2</option>
+        <option value="4">3</option>
+        <option value="5">4</option>
+        <option value="6">5</option>
+        <option value="7">6</option>
+        <option value="8">7</option>
+        <option value="9">8</option>
+        <option value="10">9</option>
+        <option value="11">10</option>
+      </select>
+
+      <label>Would you recommend our service?</label>
+      <div class="radio-group">
+        <div class="radio-button">
+          <input type="radio" id="first-time-yes" name="first_time" value="Yes" required>
+          <input type="radio" id="first-time-no" name="first_time" value="No" required>
+        </div>
+        <div class="radio-label">
+          <label for="first-time-yes">Yes</label>
+          <label for="first-time-no">No</label>
+        </div>
+      </div>
+
+      <label for="comments">Do you have any additional questions or requests?</label>
+      <textarea id="comments" name="comments" maxlength="500" placeholder="Add your feedback here..."></textarea>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+  <footer>
+    <!-- Footer Name and Description Section (Left Side) -->
+    <div class="footer-left">
+        <h1 class="footer-name">Good Health and Well-being</h1>
+        <p class="footer-description">Good Health and Well-being (SDG 3) aims to ensure healthy lives and promote well-being for all at all ages. It focuses on reducing mortality, improving access to healthcare, promoting mental health, and ensuring that everyone has access to essential healthcare services. Together, we can work toward a healthier, more equitable world for all.</p>
+    </div>
+
+    <!-- Footer Links Section (Right Side) -->
+    <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer Editors Section (Next to Links) -->
+    <div class="footer-editors">
+        <h3>Page Editors</h3>
+        <ul>
+          <li><a href="pageEditor_ST1.html">Student 1</a></li>
+          <li><a href="pageEditor_ST2.html">Student 2</a></li>
+          <li><a href="pageEditor_ST3.html">Student 3</a></li>
+          <li><a href="pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+
+    <p>© 2025 Good Health and Well-Being Initiative. Developed by [Group 9 - Subgroup 2].</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+table {
+    width: 80%;
+    border: 6px solid #038123;
+    margin: auto;
+    border-collapse: collapse;
+    background-color:#038123;
+}
+
+.table-topic {
+    border: 0.5px solid #038123;
+    border-bottom: 0px;
+    padding: 10px;
+    color: var(--neutral-light);
+    background-color: #72cb4e;
+    border-collapse: collapse;
+}
+
+.table-icon-cell {
+    border: 0.5px solid #038123;
+    border-top: 0px;
+    background-color: #72cb4e;
+}
+
+td, th {
+    border: 0.5px solid var(--primary);
+    padding: 10px;
+    background-color: var(--neutral-light);
+}
+
+.vertical-h {
+    transform: rotate(-90deg);
+}
+
+.cell-colour {
+    background-color: #bdd5a1;
+}

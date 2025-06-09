@@ -1,0 +1,188 @@
+/* Container and Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Added to allow wrapping on smaller screens */
+}
+
+.right-and-calendar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+    flex-wrap: wrap; /* Added to allow wrapping */
+}
+
+/* Left Column */
+.left-column {
+    border: 2px solid #919191;
+    width: 20%;
+    min-width: 300px; /* Added minimum width */
+    height: 600px; /* Changed from fixed height */
+    background-color: #C5D3E8;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* Right Column */
+.right-column {
+    width: 790px; /* Changed from fixed width */
+    height: 1400px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #919191;
+}
+
+/* Calendar Container */
+.main-schedule-container {
+    width: 100%;
+    height: 72%; /* Changed from fixed height */
+    flex: 0 0 650px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #919191;
+}
+
+/* Sections */
+.section-one {
+    align-items: center;
+    background-color: #f1f1f1ea;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%; /* Added full width */
+}
+
+.section-one-un {
+    background-color: #f1f1f1ea;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%; /* Added full width */
+    height: 16%;
+    
+
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Skills Bar */
+.skills-bar {
+    text-indent: 5px;
+    width: 100%;
+    background-color: #e6e6e6;
+    margin: 12px 0;
+    border-radius: 1%;
+}
+
+.skills-bar-fill {
+    height: 25px;
+    background-color: #4f95ff;
+    border-radius: 5px;
+}
+
+/* Typography */
+h2 {
+    color: #000000;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Lists */
+ul {
+    text-indent: 2px;
+    padding: 0px 25px;
+}
+
+.tags {
+    text-align: center;
+}
+
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Table styles */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule-table tr:hover {
+    background-color: #e1f5fe;
+}
+
+.schedule-table td:first-child {
+    text-align: left;
+}
+
+.un-goals {
+   margin: 10px 159px;
+   float: inline;
+   gap: 2px;
+   
+}
+
+
+
+

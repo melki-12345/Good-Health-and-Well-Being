@@ -1,0 +1,74 @@
+.sitemap-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+#title {
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.sitemap-svg {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    overflow: visible;
+}
+
+/* Node styles */
+.node {
+    cursor: pointer;
+    transition: fill 0.3s ease, transform 0.3s ease;
+    fill: var(--primary);
+    stroke: var(--secondary);
+    stroke-width: 2;
+}
+
+.node:hover {
+    fill: var(--accent);
+    
+}
+
+.node-text {
+    fill: var(--neutral-light);
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    text-anchor: middle;
+}
+
+.link {
+    fill: none;
+    stroke: var(--secondary);
+    stroke-width: 1.5;
+    
+}
+
+.node:hover + .link {
+    stroke: var(--accent);
+    stroke-width: 2;
+}
+
+/* For accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sitemap-svg {
+        max-height: 100vh;
+    }
+    
+    .node-text {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student1 - W.A Melki Hirumalee</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header>
+        <div class="title-container">
+            <img src="images/Logo.jpg" alt="sdg3logo">
+            <h1 class="website-title">Good Health and Well-Being</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="table.html">Table</a>
+            <a href="team.html">Team</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="profile.html">User Profile</a>
+        </nav>
+    </header>
+
+    <section class="stud">
+        <h2>W.A Melki Hirumalee | Student 1</h2>
+    </section>
+
+    <div class="editor-container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Screen</h2>
+                    <h3>Technical Description</h3>
+                        <p>A temporary landing page called splash screen offers website intro services before using an automatic redirect to send users to the home page after 4 seconds. It features:
+                            The smooth transition is achieved through the implementation of "meta http-equiv="refresh" content="4; url=home.html".
+                            The .splash-container contains a semi-transparent black background for clear text presentation which overlays images/img2.jpg.
+                            Vertical and horizontal element centering through flexbox creates a clean professional layout for this page.
+                            The Animated Loader contains a div that spins through CSS keyframes animation (@keyframes spin) which provides users with a visual waiting indication before page redirection.
+                            The Page Editor button uses CSS styling to function as a navigation tool which redirects users directly to home.html.
+                            The site organization automatically adjusts its display for different screen sizes by using a combination of adaptable widths and text alignment.</p>
+                        <br>
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Semantic HTML Structure:</h4> The HTML code applies meaningful elements such as h1, p and ul to support screen reader compatibility and improve document structure.</p>
+                        <p><h4>2. Alt Text for Images:</h4> Screen reader accessibility requires alt attributes with the empty quotation marks (alt="") for every image-based logo or additional icons present in the design.</p>
+                        <p><h4>3. Keyboard Navigation:</h4> Users can navigate to the “Page Editor” button (.editor-button) by using Tab key keyboard navigation and activate it with Enter key.
+                                                            Users with motor disabilities can better see the button through its hover effect on top of its keyboard accessibility.</p>
+                        <p><h4>4. Auto-Redirection Considerations:</h4> Users who depend on assistive technology may have difficulty with sudden redirections caused by the meta refresh element meta http-equiv="refresh" content="4; url=home.html".
+                                                                        The better practice includes enabling manual navigation through an alert that warns of redirection.</p>
+                        <br>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#splash">Validation Page</a>, Click on this link.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <br>
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html">splash.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The HTML document of the volunteer page shows different volunteer opportunities through a well-organized format. The webpage functions through the fusion of HTML and CSS and JavaScript to supply dynamic user-friendly feature 
+                            This page exhibits a header section that contains page title along with logo and navigation menu.
+                            The page contains main content which resides within an element called div class="container".
+                            Multiple div class="card" elements for displaying volunteer opportunities.
+                            A footer section with additional links and credits.
+                            Several external CSS files (stylesheet.css, global3.css) are linked in the document.
+                            The additional styles are included inside an inline style block placed within the head element.
+                            The page makes use of flexbox while using grid components to achieve layout adjustments based on device size.
+                            The website features hover effects that apply to select buttons as well as dropdowns and cards.
+                            The application features a review system which enables users to reveal more content through buttons for expanding and collapsing.
+                            Additional reviews appear or disappear through the "See More Reviews" button.
+                            The application uses event listener functions to control user-triggered element expansions and population changes.
+                            Uses Font Awesome (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css) for icons.
+                            The content includes additional information and volunteer program links that users can access.
+                            </p> 
+                        <br>
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Semantic HTML Structure:</h4> Uses h1, nav, section, footer for better readability by screen readers.</p>
+                        <p><h4>2.  Keyboard Navigation:</h4>  Each button and dropdown menu functions when tab is pressed.</p>
+                        <p><h4>3. Color Contrast:</h4> Many parts of the text remain readable against backgrounds yet there are some areas which require improvement.</p>
+                        <br>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#volunteerVal">Validation Page</a>, Click on this link.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        <br>
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html">Volunteer.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="content-st1">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p> The structured HTML document of the content page serves as a platform for educational information regarding physical fitness. The implementation of HTML and CSS and minimal JavaScript serves to deliver a quality user experience with proper presentation of information.
+                            The header section includes a logo area with title along with its navigation menu.
+                            A sidebar navigation ul id="sideBar" for quick access to different sections.
+                            The main content consists of a structured div area which contains text content through paragraphs and headings from h2 to h3.
+                            The page contains several img elements which have the "center-image" class for image presentation purposes.
+                            A footer section with additional links and credits.
+                            External Stylesheets: Links global3.css and content_page.css for layout consistency.
+                            Background and Font Styles: Uses Arial, sans-serif for readability.
+                            All content faces left and right borders to achieve an official justification effect.
+                            The navigation and header sections receive designs using certain background attributes and vertical spacing elements.
+                            To align images at their centers the class .center-image is utilized.
+                            Users can access various sections through the ul id="sideBar" section which contains direct anchors.
+                            Users can easily navigate through content content while it stays inside a fixed area.
+                            Currently accessible viewing is possible through images that integrate alt attributes with their code.
+                            </p> 
+                            <br>
+
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Alternative text:</h4> Alternative Text (alt) provides images an accessible description for users who depend on screen reading software.</p>
+                        <p><h4>2. Good color contrast:</h4> The color contrast between elements stands at an acceptable level for reading purposes.</p>
+                        <br>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#ContentVal">validation Page</a>, Click on this link</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <br>
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST1.html">content_ST1.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>1. Ensuring Accessibility for All Users </p>
+                        <ul> 
+                            <li>challenges:  Everyone from disability users to non-disabled users must have clear navigation routes to comprehend the content homogeneously.</li>
+                            <li>Lessons learned: Ensuring keyboard navigation improves accessibility. Users with visual impairments benefit from proper color contrast selection because it improves their ability to read the content.</li>
+                        </ul>
+                    <p>2. Maintaining Consistency in Design & Layout</p>
+                        <ul>
+                            <li>challenges: The application required a uniform design layout because global3.css and content_page.css were both utilized as stylesheet files.</li>
+                            <li>Lessons learned: A common CSS file with reusable design rules should be created for buttons and headers along with cards to establish design consistency.</li>
+                        </ul>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p><b>Security & Data Privacy (GDPR Compliance):</b></p> 
+                    <p>User consent must be obtained before collecting any personal data from forms.<br>
+                       No use of cookies or trackers without explicit notification.<br>
+                       Web pages containing external links display content in new windows while using "rel="noopener noreferrer"" to safeguard against possible security risks.</p>
+                    <p><b>Accessibility Compliance (WCAG 2.1 Standards):</b></p>
+                    <p>Pages receive enhanced accessibility because they implement semantic HTML elements including h1, h2 and nav and footer.<br>
+                       Users who have visual impairments can access images effectively when developers add proper Alt attributes to them.<br>
+                       Readability is ensured by considering color contrast to some degree.<br>
+                       The system allows keyboard operation users to move between links and buttons by pressing the Tab key.<br>
+                       Pages support text resize effectiveness using em and percentage units as well as rem units.</p>      
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 03 Mar 2025).</li>
+                        <br>
+                        <li>W3Schools (1999). <i>W3Schools online web tutorials.</i> [online] W3schools.com. Available at: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>.</li>
+                        <br>
+                        <li>United Nations (2015). <i>The 17 Sustainable Development Goals.</i> [online] United Nations. Available at: <a href="https://sdgs.un.org/goals">https://sdgs.un.org/goals</a>.</li>
+                        <br>
+                        <li></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul>
+                        <li><a href="#splash">Splash Screen</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content-st1">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Footer Name and Description Section (Left Side) -->
+        <div class="footer-left">
+            <h1 class="footer-name">Good Health and Well-Being</h1>
+            <p class="footer-description">SDG 3 Good Health and Well-being works to achieve health-related goals and well-being for all ages of people. The goal centers on lowering death rates while enhancing healthcare accessibility and mental health support and delivering basic healthcare to every person. The collective action of society will build a healthier environment where equity permeates every aspect of the world.</p>
+        </div>
+    
+        <!-- Footer Links Section (Right Side) -->
+        <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+            </ul>
+        </div>
+    
+        <!-- Footer Editors Section (Next to Links) -->
+        <div class="footer-editors">
+            <h3>Page Editors</h3>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4</a></li>
+            </ul>
+        </div>
+    
+        <p>© 2025 Good Health and Well-Being Initiative. Developed by [Group 9 - Subgroup 2].</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - D.G.C Anupama</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header>
+        <div class="title-container">
+            <img src="images/Logo.jpg" alt="sdg3logo">
+            <h1 class="website-title">Good Health and Well-Being</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="table.html">Table</a>
+            <a href="team.html">Team</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="profile.html">User Profile</a>
+        </nav>
+    </header>
+
+    <section class="stud">
+        <h2>D.G.C Anupama | Student 4</h2>
+    </section>
+
+    <div class="editor-container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="ProfileVal">User Profile Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The user profile page (profile.html) employs semantic HTML5 elements with a proper document structure, including <code>&lt;meta&gt;</code> tags for responsiveness and accessibility. The layout utilizes CSS flexbox through .container and .right-and-calendar classes to create a responsive design with a <code>&lt;div class="left-column"&gt;</code>
+                            displaying profile information and a <code>&lt;div class="right-section"&gt;</code>containing about me, goals, frustrations, experience, and contact form sections. The contact form implements HTML5 validation using <code>&lt;input required&gt;</code> and <code>&lt;textarea required&gt;</code> while the schedule table uses alternating row colors via CSS for readability. 
+                            CSS custom properties like <code>&lt;--primary&gt;</code> and  <code>&lt;--neutral-lighty&gt;</code> ensure consistent theming, and hover effects on .btn and navigation links enhance interactivity. Accessibility is addressed through semantic markup, alt attributes for <code>&lt;img&gt;</code> elements, and sufficient color contrast between text and background elements.</p>
+                        <br>
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Semantic HTML Structure:</h4> The page uses proper semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to create a logical document structure that screen readers can navigate effectively.</p>
+                        <p><h4>2. Alt Text for Images:</h4> All images, including the profile picture and UN goal icons, have descriptive alt attributes that provide context for screen reader users.</p>
+                        <p><h4>3. Keyboard Navigation:</h4> The layout and interactive elements are designed to be fully navigable using keyboard controls, with proper focus management for links and form elements.</p>
+                        <p><h4>4. Visual Hierarchy:</h4> Clear heading structure and consistent styling help users with cognitive disabilities understand the content organization.</p>
+                        <br>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html#profilepage">Validation Page</a>, Click on this link.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <br>
+                    <h3>Link to the page</h3>
+                        <p><a href="profile.html">profile.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="SitemapVal">Sitemap Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The sitemap page (sitemap.html) utilizes semantic HTML5 with a proper document structure, including <code>&lt;meta&gt;</code> tags for responsiveness. The layout employs an <code>&lt;svg&gt;</code> element to create an interactive visual representation of the site structure, with <code>&lt;rect&gt;</code> elements for nodes, <code>&lt;text&gt;</code> for labels, and <code>&lt;line&gt;</code> for connections. 
+                            CSS flexbox and media queries ensure responsive behavior, while custom properties like <code>&lt;--primary&gt;</code> maintain consistent theming. Accessibility is addressed through ARIA labels, sufficient color contrast, and keyboard-navigable elements.</p> 
+                        <br>
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Semantic HTML Structure:</h4> The page uses proper semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to create a logical document structure that screen readers can navigate effectively.</p>
+                        <p><h4>2. ARIA Labels:</h4> The SVG elements include aria-label attributes that describe each node and connection, ensuring screen readers can interpret the diagram.</p>
+                        <p><h4>3. Color Contrast:</h4> Sufficient contrast ratios between elements ensure readability for users with visual impairments, following WCAG guidelines.</p>
+                        <br>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html#SitemapVal">Validation Page</a>, Click on this link.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        <br>
+                    <h3>Link to the page</h3>
+                        <p><a href="sitemap.html">sitemap.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="ContentVal">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The HTML page uses semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to create a logical structure for nutrition content. The CSS employs fixed positioning for the sidebar navigation, ensuring consistent access to content sections. 
+                            The main content area uses overflow scrolling to handle extensive text. The image gallery utilizes CSS floats and borders for responsive layout, while tables employ <code>&lt;border-collapse&gt;</code> for readability. Key CSS properties include <code>&lt;margiin&gt;</code>, <code>&lt;pading&gt;</code>, 
+                            and hover effects to enhance usability and visual feedback. The design balances fixed elements for navigation with fluid content areas, creating a user-friendly experience that presents complex nutritional information in an accessible format.</p> 
+                            <br>
+
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Meaningful navigation:</h4> The navigation menu employs descriptive link text and an unordered list format, which is accessible to assistive technologies.</p>
+                        <p><h4>2. Good color contrast:</h4> The color scheme maintains sufficient contrast between text and background for readability by users with visual impairments.</p>
+                        <br>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html#ContentVal">validation Page</a>, Click on this link</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <br>
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST4.html">content_ST4.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>1. Maintaining visual consistency across multiple pages required careful organization of CSS classes and variables. 
+                        This highlighted the value of creating a style guide early in the development process.</p> 
+                    <p>2. When creating the weekly Availability table it is more difficult to manage the rows and columns. And mostly the responsive of the table.</p>
+                    <p>And more of lessons...</p>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>Sometimes I had issues with font sizes looking too small or too big on different devices. I solved this by using relative units like em and rem instead of fixed pixel sizes, so the text adjusted better on different screen sizes. I also had trouble with images not resizing properly. They would either overflow the container or look stretched. I fixed this by using max-width: 100% and height: auto in CSS to keep the images responsive. Another challenge was making sure elements stayed in the right position when the screen size changed. I used CSS Flexbox and Grid to create a more flexible layout and added media queries to adjust styles for smaller screens. Sometimes, the colors and background didn’t contrast well, making text hard to read. I fixed this by choosing better color combinations and making sure there was enough contrast for accessibility.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                        <br>
+                        <li>W3Schools (1999). <i>W3Schools online web tutorials.</i> [online] W3schools.com. Available at: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>.</li>
+                        <br>
+                        <li>United Nations (2015). <i>The 17 Sustainable Development Goals.</i> [online] United Nations. Available at: <a href="https://sdgs.un.org/goals">https://sdgs.un.org/goals</a>.</li>
+                        <br>
+                        <li></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#ProfileVal">Profile page </a></li>
+                        <li><a href="#SitemapVal">Sitemap page</a></li>
+                        <li><a href="#ContentVal">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Footer Name and Description Section (Left Side) -->
+        <div class="footer-left">
+            <h1 class="footer-name">Good Health and Well-Being</h1>
+            <p class="footer-description">SDG 3 Good Health and Well-being works to achieve health-related goals and well-being for all ages of people. The goal centers on lowering death rates while enhancing healthcare accessibility and mental health support and delivering basic healthcare to every person. The collective action of society will build a healthier environment where equity permeates every aspect of the world.</p>
+        </div>
+    
+        <!-- Footer Links Section (Right Side) -->
+        <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+            </ul>
+        </div>
+    
+        <!-- Footer Editors Section (Next to Links) -->
+        <div class="footer-editors">
+            <h3>Page Editors</h3>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4</a></li>
+            </ul>
+        </div>
+    
+        <p>© 2025 Good Health and Well-Being Initiative. Developed by [Group 9 - Subgroup 2].</p>
+    </footer>
+</body>
+</html>

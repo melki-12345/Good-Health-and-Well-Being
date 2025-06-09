@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - D.S.Raphael.A.Wijesekera</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="title-container">
+            <img src="images/Logo.jpg" alt="sdg3logo">
+            <h1 class="website-title">Good Health and Well-Being</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="table.html">Table</a>
+            <a href="team.html">Team</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="profile.html">User Profile</a>
+        </nav>
+    </header>
+
+    <section class="stud">
+        <h2>D.S.Raphael.A.Wijesekera | Student 3</h2>
+    </section>
+
+    <div class="editor-container">
+        <!-- Main content area -->
+        <main>
+            <section>
+                <h2 id="TeamVal">Team Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The file is a Team Page for a website focused on "Good Health and Well-being." The team page (team.html) employs semantic HTML5 elements with a proper document structure, including a header, navigation, main content area, and footer. It introduces the project team members and includes navigation, images, and structured content.</p>
+                        <br>
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Semantic HTML Structure:</h4> The page uses proper semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> and <code>&lt;footer&gt;</code> to create a logical document structure that screen readers can navigate effectively. This also provides main page navigation using links and also organizes team member profiles that represents each team member.</p>
+                        <p><h4>2. Alt Text for Images:</h4> All images, including the profile pictures of each team member, the background image and the logo icons, have descriptive alt attributes that provide context for screen reader users and it also provides a decent look and feel.<ul><li>Team Member Profile Picture(raphael-pfp.png, etc...)</li><li>Background Image</li><li>Fallback Image(<code>&lt;onerror="this.src='images/pfp.png';"&gt;</code>)</li></ul></p>
+                        <p><h4>3. Keyboard Navigation:</h4> The layout and interactive elements are designed to be fully navigable using keyboard controls, with proper focus management for links and form elements. Also uses aria-label for better screen reader descriptions.</p>
+                        <p><h4>4. Visual Hierarchy:</h4> Clear heading structure and consistent styling help users with cognitive disabilities understand the content organization. It also has navigation bar with clearly spaced links, bold descriptions and structured profiles, textal descriptions using list bullets for readability and multiple sections using headings for better clarity.</p>
+                        <br>
+                    <h3>Link to the validation page</h3> <!-- to link the Page Editor with the validation page -->
+                        <a href="validation_ST3.html#TeamVal">Validation Page</a>
+                        <br>
+                    <h3>Link to the team page</h3><!-- to link the Page Editor with the team page -->
+                        <p><a href="team.html">Team Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="FeedbackVal">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Feedback Page allows users to provide their feedback on the website. It includes a form with input fields for name, email, feedback and drop down for user rating. It also includes a button to submit the feedback.</p> 
+                        <br>
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Semantic HTML Structure:</h4>The document follows a semantic HTML structure consistinga website logo,a website title, a navigation bar, a main content area, and a footer. The main content area includes a form, input fields, and a button also including a background image in this page.</p>
+                        <p><h4>2. ARIA Labels:</h4>The page contains a form where users can submit their opinion on the website which improves accessibility. <code>&lt;aria-labels&gt;</code>should be used specifically to assist the user's reading.</p>
+                        <p><h4>3. Visual Hierarchy:</h4><code>&lt;h1&gt;</code>used for website title and <code>&lt;h2&gt;</code>used for Feedback Form title. The form is structured using <code>&lt;label&gt;</code> and <code>&lt;input&gt;</code> elements. In this page the form labels are associated with the input fields and also includes placeholders for better user experience. A single form consists of <code>&lt;value&gt;</code> where it stores a temporary value.</p>
+                        <br>
+                    <h3>Link to the validation page</h3> <!-- to link the Page Editor with the validation page -->
+                        <a href="validation_ST3.html#FeedbackVal">Validation Page</a>
+
+                        <br>
+                    <h3>Link to the feedback page</h3><!-- to link the Page Editor with the feedback page -->
+                        <p><a href="feedback.html">Feedback Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="ContentVal">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The HTML page uses semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to create a logical structure for health awareness content. The CSS employs fixed positioning for the sidebar navigation, ensuring consistent access to content sections. 
+                            The main content area uses overflow scrolling to handle extensive text. The image gallery utilizes CSS floats and borders for responsive layout, while tables employ <code>&lt;border-collapse&gt;</code> for readability. Key CSS properties include <code>&lt;margiin&gt;</code>, <code>&lt;pading&gt;</code>, 
+                            and hover effects to enhance usability and visual feedback. The design balances fixed elements for navigation with fluid content areas, creating a user-friendly experience that presents complex nutritional information in an accessible format.</p> 
+                            <br>
+
+                    <h3>Accessibility</h3>
+                        <p><h4>1. Meaningful navigation:</h4> The navigation menu employs descriptive link text and an unordered list format, which is accessible to assistive technologies. This also makes the navigation menu easier to navigate for users and to switch into sepcific topics fastwhile reading.</p>
+                        <p><h4>2. Better image alignment:</h4> The images are well used and the positions are well fixed using image alignment. The images are under a <code>&lt;div&gt;</code> element where there is a class used for the <code>&lt;div&gt;</code> element <code>&lt;div class=imgs&gt;</code>which consists of image alignment except individual image alignment as well.</p>
+                        <br>
+
+                    <h3>Link to the validation page</h3> <!-- to link the Page Editor with the validation page -->
+                        <a href="validation_ST3.html#ContentVal">Validation Page</a>
+                        <br>
+                        
+                    <h3>Link to the content page</h3><!-- to link the Page Editor with the content page -->
+                        <p><a href="content_pageST3.html">Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>1. It was diificult to decorate images and it was even more difficult to fix the size of them.</p> 
+                    <p>2. When creating the glow over hover effect in the Team Page, it was diificult to make it look more brighter as I had to use several box-shadow statements to get it right.</p>
+                    <p>3. It was also difficult to make the background image in Team Page and Feedback Page look less brighter and it was even more difficult to fix the size of them while making it not repeat when the user scrolls. </p>
+                    <p>4. It was comparatively difficult to make the images have an alternate image if the main image is gone or missing.</p>
+                    <p>5. I learnt that giving an alternative text and an alternative image for an image is very important and also a better practice.</p>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>The compliance section ensures that all three webpages adhere to relevant regulations and standards. The Team Page maintains transparency by listing team members and their roles. The Feedback Page ensures data privacy and proper handling of user input. The Health Awareness Content Page follows accuracy guidelines, providing reliable and well-sourced information while avoiding misinformation. All pages comply with accessibility standards and user data protection policies.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <ol class="ref">
+                        <li>(No date a) Centers for Disease Control and Prevention. Available at: <a href="http://www.cdc.gov/ ">http://www.cdc.gov/</a> (Accessed: 09 March 2025). </li>
+                        <li>(No date b) Overcoming the world's challenges - the global goals. Available at: <a href="https://www.globalgoals.org/resources/">https://www.globalgoals.org/resources/</a> (Accessed: 09 March 2025). </li>
+                        <li>Dr. Richard CrabbeDr. Richard Crabbe joined our team in 2019 as our psychiatrist and medical director. He attended the University of Ghana Medical School where he became a Medical Doctor in 1977. From 1978 through 1984 (2024) Emotional health vs mental health - free by the sea - WA, Free By The Sea Washington Rehab Center. Available at: <a href="https://freebythesea.com/emotional-health-vs-mental-health/#:~:text=Mental%20health%20is%20primarily%20concerned,health%20are%20two%20distinct%20aspects">https://freebythesea.com/emotional-health-vs-mental-health/#:~:text=Mental%20health%20is%20primarily%20concerned,health%20are%20two%20distinct%20aspects</a> (Accessed: 09 March 2025).</li
+                        <li>Goal 3: Good health and well-being (2024) The Global Goals. Available at: <a href="https://www.globalgoals.org/goals/3-good-health-and-well-being/">https://www.globalgoals.org/goals/3-good-health-and-well-being/</a> (Accessed: 10 March 2025).</li>
+                        <li>Medyaan (2023) Nutrition and its effect on health, LinkedIn. Available at: <a href="https://www.linkedin.com/pulse/nutrition-its-effect-health-medyaan/">https://www.linkedin.com/pulse/nutrition-its-effect-health-medyaan/</a>  (Accessed: 09 March 2025). </li>
+                        <li>National Institute of Mental Health (NIMH) - transforming the understanding and treatment of mental illnesses (no date) National Institute of Mental Health. Available at: <a href="https://www.nimh.nih.gov/">https://www.nimh.nih.gov/</a> (Accessed: 09 March 2025).</li>
+                        <li>Physical fitness: Top 10 benefits (2024) REAN Foundation - Empower Yourself To Manage Your Health. Available at: <a href="//www.reanfoundation.org/physical-fitness-benefits/">"//www.reanfoundation.org/physical-fitness-benefits/</a> (Accessed: 10 March 2025). </li>
+                        <li>United Nations (2015). <i>The 17 Sustainable Development Goals.</i> [online] United Nations. Available at: <a href="https://sdgs.un.org/goals">https://sdgs.un.org/goals</a>.</li>
+                        <li>WHO (no date) World Health Organization (WHO), World Health Organization. Available at: <a href="//www.who.int/ ">"//www.who.int/</a> (Accessed: 09 March 2025).</li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="team.html">Team page </a></li>
+                        <li><a href="feedback.html">Feedback page</a></li>
+                        <li><a href="content_pageST3.html">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Footer Name and Description Section (Left Side) -->
+        <div class="footer-left">
+            <h1 class="footer-name">Good Health and Well-Being</h1>
+            <p class="footer-description">SDG 3 Good Health and Well-being works to achieve health-related goals and well-being for all ages of people. The goal centers on lowering death rates while enhancing healthcare accessibility and mental health support and delivering basic healthcare to every person. The collective action of society will build a healthier environment where equity permeates every aspect of the world.</p>
+        </div>
+    
+        <!-- Footer Links Section (Right Side) -->
+        <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+            </ul>
+        </div>
+    
+        <!-- Footer Editors Section (Next to Links) -->
+        <div class="footer-editors">
+            <h3>Page Editors</h3>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4</a></li>
+            </ul>
+        </div>
+    
+        <p>© 2025 Good Health and Well-Being Initiative. Developed by [Group 9 - Subgroup 2].</p>
+    </footer>
+</body>
+</html>

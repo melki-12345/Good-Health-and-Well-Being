@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgb(52, 116, 58);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .dropdown-button {
+            margin-bottom: 10px;
+            background: #d0e0c7;
+            color: rgb(17, 17, 16);
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 40%;
+            margin-top: 10px;
+        }
+        .dropdown-button:hover {
+            background-color: #abb99d;
+        }
+        .dropdown-content{
+            background-color:#7da578;
+            z-index: 1;
+            position:absolute;
+            display:none;
+            box-shadow: #d9ee8e ;   
+        }
+        .volunteer-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .card {
+            background: #f3f2b3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            width: 350px;
+            height: 210px;
+            padding-bottom: 220px;
+            overflow-y: auto;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px ;
+            color: #000000;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #574d4d;
+            max-height: 200px;
+            text-align:justify;
+        }
+        .card table {
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+            background-color: #80c9a1;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card table th,
+        .card table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .card table th {
+            background-color: #8ac572;
+            color: #333;
+            font-weight: bold;
+        }
+        .card table td {
+            color: #5a5959;
+            font-weight: bold;
+        }
+        .card table tr:hover {
+            background-color: #e0f3d7;
+        }
+
+        .card table td:last-child {
+            text-align: center;
+        }
+        .icons i {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .icons i {
+            color: #20500e;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #90cc95; /* Light background for better visibility */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: #000000;
+        }
+        .feature:hover{
+            transform: scale(1.1);
+            background: #579457;
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card button  {
+            background: #ad8107;
+            color: rgb(191, 228, 162);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 10px;;
+        }
+        .card button:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .reviews {
+            margin-top: 30px;
+            text-align: left;
+            padding: 15px;
+            background: #e5e8eb;
+            border-radius: 8px;
+        }
+        #seeMoreBtn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #2d966e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #seeMoreBtn:hover {
+            background-color: #58b36c;
+        }
+        .review {
+            background: rgb(241, 239, 239);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .rating-summary {
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+
+        .rating-summary h2 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .rating-label {
+            font-size: 1em;
+            color:  #000000; /* Highlighted color */
+        }
+
+        .rating-summary p {
+            font-size: 1em;
+            color: #201f1f;
+        }
+        .review-text {
+            display: block;
+            max-height: 100px; /* Limit the visible text height */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .hidden{
+            display: none;
+        }
+        .more-text {
+            display: none;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .see-more {
+            color: #5e8a4d;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .see-more:hover {
+            text-decoration: underline;
+        }
+        .stars {
+            color: gold;
+        }
+        .feedback-form {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .feedback-form textarea {
+            width: 80%;  /* Make it take most of the form's width */
+            height: 100px;  /* Increase the height */
+            font-size: 16px;  /* Make the text larger */
+            padding: 10px;  /* Add some space inside */
+            border: 1px solid #ccc;  /* Add a border */
+            border-radius: 5px;  /* Slightly rounded corners */
+            resize: vertical;  /* Allow resizing only vertically */
+        }
+        .feedback-form button {
+            font-size: 16px;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 30%;
+            margin: 10px 5px;
+            transition: transform 0.2s ease-in-out, background-color 0.3s;
+        }
+
+        .submit-btn {
+            background: #2b5f17;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.1);
+            background: #1f4111;
+        }
+
+        .cancel-btn {
+            background: #ccc;
+            color: #333;
+            border: none;
+        }
+
+        .cancel-btn:hover {
+            transform: scale(1.1);
+            background: #999;
+        }
+        .emoji-rating span  {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .emoji-rating span:hover {
+            transform: scale(1.3);
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <img src="images/Logo.jpg" alt="sdg3logo">
+            <h1 class="website-title">Good Health and well-being</h1>
+        <nav>
+            <a href="home.html" >Home</a>
+            <a href="volunteer.html" class="active">Volunteer</a>
+            <a href="table.html">Table</a>
+            <a href="team.html">Team</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="profile.html">User Profile</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1><b>Volunteer Opportunities</b></h1>
+        <select class="dropdown-button">
+            <option>Sort by: Most Popular</option>
+            <option>Newest</option>
+            <option>Highest Rated</option>
+        </select>
+        
+        <div class="volunteer-section">
+            <div class="card p">
+                <h3>Medical volunteering program in Sri Lanka</h3>
+                <img src="images/volunteer1.jpg" alt="Health Camp">
+                <div class="features">
+                    <div class="feature">
+                        <img src="icons/hospital.png" alt="Hospital Icon">
+                        <p>Assists in Local Hospitals</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/first-aid.jpg" alt="First Aid Icon">
+                        <p>Provides First Aid Training</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/doctor.jpg" alt="Doctor Icon">
+                        <p>Supports Medical Teams</p>
+                    </div>
+                </div>                
+                <p>Join our health camp to assist doctors and provide medical support to underserved communities.
+                    Provide essential medicines and medical supplies to those who cannot afford them, ensuring no one leaves without proper care.
+                    Provide free health screenings for common conditions such as high blood pressure, diabetes, and cholesterol levels, which can help detect health issues early on.
+                </p>
+                <div class="icons">
+                    <p><i class="fas fa-clock"></i>1-12 weeks <br>
+                        <i class="fas fa-user"></i>Volunteers of aged 16+</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Duration</th>
+                        <td>2 weeks</td>
+                    </tr>
+                    <tr>
+                        <th>Program Fee</th>
+                        <td>£200</td>
+                    </tr>
+                </table>
+                <br>
+                <a href="https://www.volunteerhq.org/destinations/sri-lanka/medical-in-kandy/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+                <button>Join Now</button>
+                </a>
+            </div>
+            <div class="card p">
+                <h3>The great global cleanup</h3>
+                <img src="images/volunteer2.jpg" alt="Community Clean-Up">
+                <div class="features">
+                    <div class="feature">
+                        <img src="icons/earth.jpg" alt="earth Icon">
+                        <p>Protects the Environment</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/plastic.jpg" alt="plastic Icon">
+                        <p>Reduces Plastic Waste</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/plant.jpg" alt="plant Icon">
+                        <p>Promotes Sustainability</p>
+                    </div>
+                </div>      
+                <p>Help clean public spaces and promote environmental awareness in your community.
+                   Organize community clean-up events to reduce litter and promote a healthier environment.
+                   Collaborate with local schools and organizations to educate others on the importance of sustainability and waste management.    
+                </p>
+                <div class="icons">
+                    <p><i class="fas fa-clock"></i>1-12 weeks <br>
+                        <i class="fas fa-user"></i>Volunteers of aged 16+</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Duration</th>
+                        <td>2 weeks</td>
+                    </tr>
+                    <tr>
+                        <th>Program Fee</th>
+                        <td>£150</td>
+                    </tr>
+                </table>  
+                <br>
+                <a href="https://www.earthday.org/campaign/cleanup/" target="_blank" rel="noopener noreferrer">
+                <button>Join Now</button>
+                </a>
+            </div>
+            <div class="card p">
+                <h3>Sri Lanka Mental Health volunteer program</h3>
+                <img src="images/volunteer3.jpg" alt="Mental Health Support">
+                <div class="features">
+                    <div class="feature">
+                        <img src="icons/brain.jpg" alt="brain Icon">
+                        <p> Supports Mental Well-being</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/community.jpg" alt="community Icon">
+                        <p> Provides Community Outreach</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/awareness.jpg" alt="awareness Icon">
+                        <p>Awareness & Education</p>
+                    </div>
+                </div>   
+                <p>Provide emotional support and counseling for people struggling with mental health issues.
+                   Create safe spaces for individuals to share their experiences and feelings without judgment.
+                   Partner with mental health professionals to provide resources and workshops that foster emotional well-being.
+                </p>
+                <div class="icons">
+                    <p><i class="fas fa-clock"></i>8-12 weeks <br>
+                       <i class="fas fa-user"></i>Volunteers of aged 16+</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Duration</th>
+                        <td>2 weeks</td>
+                    </tr>
+                    <tr>
+                        <th>Program Fee</th>
+                        <td>£450</td>
+                    </tr>
+                </table>  
+                <br>
+                <a href="https://www.planmygapyear.com/volunteer-in-sri-lanka/sri-lanka-mental-health-volunteers" target="_blank" rel="noopener noreferrer">
+                <button>Join Now</button>
+                </a>
+            </div>
+            <div class="card p">
+                <h3>Nutrition Awareness Program</h3>
+                <img src="images/volunteer4.jpg" alt="Nutrition Awareness Program">
+                <div class="features">
+                    <div class="feature">
+                        <img src="icons/eating.jpg" alt="eating Icon">
+                        <p> Promotes Healthy Eating Habits</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/deficiency.jpg" alt="deficiency Icon">
+                        <p>  Fights Malnutrition & Deficiency</p>
+                    </div>
+                    <div class="feature">
+                        <img src="icons/school.jpg" alt="school Icon">
+                        <p>Conducts School & Community Workshops</p>
+                    </div>
+                </div>   
+                <p>Educate communities about healthy eating habits and the importance of balanced diets.
+                   Organize workshops and cooking classes to demonstrate easy, nutritious meal preparation.
+                   Collaborate with local farmers' markets to promote the benefits of fresh, locally sourced ingredients.
+                </p>
+                <div class="icons">
+                    <p><i class="fas fa-clock"></i>13-15 weeks<br>
+                       <i class="fas fa-user"></i>Volunteers of aged 16+</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Duration</th>
+                        <td>2 weeks</td>
+                    </tr>
+                    <tr>
+                        <th>Program Fee</th>
+                        <td>£400</td>
+                    </tr>
+                </table>  
+                <br>
+                <a href="https://www.volunteerforever.com/article_post/volunteer-abroad-to-end-hunger-food-security-nutrition-education-sustainable-agriculture-volunteering-opportunities/" target="_blank" rel="noopener noreferrer">
+                <button>Join Now</button>
+                </a>
+            </div>
+        <div class="card p">
+            <h3>Health Outreach in Costa Rica (Maximo Nivel)</h3>
+            <img src="images/volunteer5.jpg" alt="health out reach program">
+            <div class="features">
+                <div class="feature">
+                    <img src="icons/medical.jpg" alt="medical Icon">
+                    <p> Provides Medical Support</p>
+                </div>
+                <div class="feature">
+                    <img src="icons/healthcare.jpg" alt="healthcare Icon">
+                    <p>Supports Healthcare Teams</p>
+                </div>
+                <div class="feature">
+                    <img src="icons/public.jpg" alt="public Icon">
+                    <p>Public Health Awareness</p>
+                </div>
+            </div>   
+            <p>Maximo Nivel is a well-known organization in Costa Rica that offers various volunteer opportunities, including health outreach programs. 
+               These programs are designed to provide hands-on experience in community health initiatives while also benefiting local populations in need.
+            </p>
+            <div class="icons">
+                <p><i class="fas fa-clock"></i>8-12 weeks<br>
+                   <i class="fas fa-user"></i>Volunteers of aged 16+</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Duration</th>
+                    <td>2 weeks</td>
+                </tr>
+                <tr>
+                    <th>Program Fee</th>
+                    <td>£300</td>
+                </tr>
+            </table>  
+            <br>
+            <a href="https://maximonivel.com/volunteers/medical-healthcare/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+            <button>Join Now</button>
+            </a>
+           </div>
+        <div class="card p">
+            <h3>Wellness in schools</h3>
+            <img src="images/volunteer6.jpg"wellness in schools">
+            <div class="features">
+                <div class="feature">
+                    <img src="icons/school.jpg" alt="school Icon">
+                    <p> Encourages Healthy Habits</p>
+                </div>
+                <div class="feature">
+                    <img src="icons/brain.jpg" alt="brain Icon">
+                    <p> Mental Health Awareness</p>
+                </div>
+                <div class="feature">
+                    <img src="icons/eating.jpg" alt="eating Icon">
+                    <p>Teaches Healthy Eating</p>
+                </div>
+            </div>   
+            <p>Wellness in the Schools (WITS) is a national nonprofit organization that partners with public schools to inspire healthy eating and fitness among students. 
+               They offer various volunteer opportunities, including assisting with Family Fitness Fun Nights (FFFNs), where volunteers help facilitate activities like Zumba, yoga, and basketball, and support the overall event coordination.
+            </p>
+            <div class="icons">
+                <p><i class="fas fa-clock"></i>1-12 weeks<br>
+                   <i class="fas fa-user"></i>Volunteers of aged 18+</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Duration</th>
+                    <td>2 weeks</td>
+                </tr>
+                <tr>
+                    <th>Program Fee</th>
+                    <td>£350</td>
+                </tr>
+            </table>  
+            <br>
+            <a href="https://www.wellnessintheschools.org/contact/?utm_source=chatgpt.com#volunteer" target="_blank" rel="noopener noreferrer">
+            <button>Join Now</button>
+            </a>
+        </div>
+    </div>
+        <br>
+        <div class="rating-summary">
+            <h2>9.4/10<br><span class="rating-label">Exceptional</span></h2>
+            <p>Based on 5,231 Reviews</p>
+        </div>
+        <div id="reviews">
+            <h2>User Reviews</h2>
+            <div class="review">
+                <span class="stars">★★★★★</span>
+                <p class="review-text">
+                    "Great initiative! Loved working at the Health Camp."<br>
+                    <span class="more-text"> It was an enriching experience, and I learned a lot about medical support and how to help the underserved communities in ways I had never imagined before. Highly recommend this opportunity to anyone interested in healthcare and community work!</span>
+                </p>
+                <a href="#" class="see-more">See More</a>
+                <br>
+                (John Doe 18 Aug, 2024)   
+            </div>
+            <div class="review">
+                <span class="stars">★★★★☆</span>
+                <p class="review-text">
+                    "The Clean-Up drive was amazing. Highly recommend!"<br>
+                    <span class="more-text"> The event was well-organized, and it felt great to be part of a team working towards a cleaner environment. Everyone was so enthusiastic, and the organizers provided all the necessary supplies. It was inspiring to see the community come together and make a real difference. Highly recommend joining if you get the chance!</span>
+                </p>
+                <a href="#" class="see-more">See More</a>
+                <br>
+                (Jane Smith 20 Sep,2024)
+            </div>
+            <div class="review">
+                <span class="stars">★★★☆☆</span>
+                <p class="review-text">
+                    "The Mental Health Support camp was a meaningful experience!" <br>
+                    <span class="more-text">It felt great to help others and raise awareness. Highly recommend!"</span>
+                </p>
+                <a href="#" class="see-more">See More</a>
+                <br>
+                (Alex Johnson 02 Nov,2024)      
+            </div>
+            <div class="review">
+                <span class="stars">★★★★★</span>
+                <p class="review-text">
+                    "The Nutrition Awareness Program was very informative!"<br>
+                    <span class="more-text">It was great to educate people about healthy eating habits and see their enthusiasm. Highly recommend!"</span>
+                </p>
+                <a href="#" class="see-more">See More</a>
+                <br>
+                (Sarah Williams 12 Dec,2024)   
+            </div>
+            <div class="review hidden">
+                <span class="stars">★★★★★</span>
+                <p class="review-text">
+                   "The Environmental Cleanup Drive was an amazing experience!<br>
+                   <span class="more-text">It felt great to contribute to a cleaner community."</span>
+                </p>
+                <a href="#" class="see-more">See More</a>
+                <br>
+                <p>(Michael Brown 18 Jan, 2025)</p>
+            </div>
+        </div>
+        <button id="seeMoreBtn">See More Reviews</button>
+        <div class="feedback-form">
+            <h2>Submit Your Review</h2>
+            <div class="emoji-rating span">
+                <span>😡</span> <span>😕</span> <span>😐</span> <span>😊</span> <span>😍</span>
+            </div>
+            <textarea placeholder="Write your review..."></textarea>
+            <br>
+            <button class="submit-btn">Submit Feedback</button>
+            <button class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+    <footer>
+        <!-- Footer Name and Description Section (Left Side) -->
+        <div class="footer-left">
+            <h1 class="footer-name">Good Health and Well-being</h1>
+            <p class="footer-description">Good Health and Well-being (SDG 3) aims to ensure healthy lives and promote well-being for all at all ages. It focuses on reducing mortality, improving access to healthcare, promoting mental health, and ensuring that everyone has access to essential healthcare services. Together, we can work toward a healthier, more equitable world for all.</p>
+        </div>
+    
+        <!-- Footer Links Section (Right Side) -->
+        <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+            </ul>
+        </div>
+    
+        <!-- Footer Editors Section (Next to Links) -->
+        <div class="footer-editors">
+            <h3>Page Editors</h3>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4</a></li>
+            </ul>
+        </div>
+    
+        <p>© 2025 Good health and well being Initiative. Developed by [group-9 subgroup-2].</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.see-more').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const reviewText = this.previousElementSibling;
+                const moreText = reviewText.querySelector('.more-text');
+                
+                if (moreText.style.display === "none" || !moreText.style.display) {
+                    moreText.style.display = "inline";
+                    this.textContent = "See Less";
+                } else {
+                    moreText.style.display = "none";
+                    this.textContent = "See More";
+                }
+            });
+        });
+        document.getElementById("seeMoreBtn").addEventListener("click", function() {
+            let hiddenReviews = document.querySelectorAll(".hidden");
+
+            hiddenReviews.forEach(function(review) {
+                if (review.style.display === "none" || review.style.display === "") {
+                    review.style.display = "block"; // Show hidden reviews
+                    document.getElementById("seeMoreBtn").textContent = "See Less Reviews";
+                } else {
+                    review.style.display = "none"; // Hide reviews again
+                    document.getElementById("seeMoreBtn").textContent = "See More Reviews";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
